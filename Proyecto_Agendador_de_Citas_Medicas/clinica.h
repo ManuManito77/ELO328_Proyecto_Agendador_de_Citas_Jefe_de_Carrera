@@ -6,11 +6,11 @@
 
 class Clinica {
 private:
-    vector<Cita> citas;
+    vector<Cita*> citas;
 
 public:
-    void programarCita(const Cita& cita);
-    void mostrarCitas() const;
+    void agregarCita(Cita* cita);
+    void mostrarCitas();
 };
 
 #endif // CLINICA_H

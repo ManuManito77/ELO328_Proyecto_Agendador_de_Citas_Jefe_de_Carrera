@@ -1,16 +1,17 @@
 #include <iostream>
 #include "clinica.h"
 
-void Clinica::programarCita(const Cita& cita) {
+void Clinica::agregarCita(Cita* cita) {
     citas.push_back(cita);
-    cout << "Cita programada con éxito." << endl;
 }
 
-void Clinica::mostrarCitas() const {
-    cout << "Citas programadas:" << endl;
-    for (const auto& cita : citas) {
-        cout << "Fecha: " << cita.getFecha() << ", Hora: " << cita.getHora()
-                << ", Especialidad: " << cita.getEspecialidad()
-                << ", Paciente: " << cita.getPaciente().getNombre() << endl;
+void Clinica::mostrarCitas() {
+    for (Cita* cita : citas) {
+        std::cout << "Fecha: " << cita->getFecha() << std::endl;
+        std::cout << "Hora: " << cita->getHora() << std::endl;
+        std::cout << "Especialidad: " << cita->getEspecialidad() << std::endl;
+        std::cout << "Paciente: " << cita->getPaciente()->getNombre() << std::endl;
+        std::cout << "Funcionario: " << cita->getFuncionario()->getNombre() << std::endl;
+        std::cout << "------------------------" << std::endl;
     }
 }

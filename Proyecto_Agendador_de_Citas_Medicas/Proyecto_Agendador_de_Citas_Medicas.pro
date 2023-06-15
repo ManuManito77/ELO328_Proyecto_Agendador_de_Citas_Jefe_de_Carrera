@@ -11,17 +11,22 @@ CONFIG += c++17
 SOURCES += \
     cita.cpp \
     clinica.cpp \
+    funcionario.cpp \
     main.cpp \
     paciente.cpp \
+    ventana_paciente.cpp \
     widget.cpp
 
 HEADERS += \
     cita.h \
     clinica.h \
+    funcionario.h \
     paciente.h \
+    ventana_paciente.h \
     widget.h
 
 FORMS += \
+    ventana_paciente.ui \
     widget.ui
 
 # Default rules for deployment.

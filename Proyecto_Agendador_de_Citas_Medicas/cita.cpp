@@ -1,20 +1,29 @@
 #include "cita.h"
 
-Cita::Cita(const string& fecha, const string& hora, const string& especialidad, const Paciente& paciente)
-    : fecha(fecha), hora(hora), especialidad(especialidad), paciente(paciente) {}
+Cita::Cita(string fecha, string hora, string especialidad, Paciente* paciente, Funcionario* funcionario) {
+    this->fecha = fecha;
+    this->hora = hora;
+    this->especialidad = especialidad;
+    this->paciente = paciente;
+    this->funcionario = funcionario;
+}
 
-string Cita::getFecha() const {
+std::string Cita::getFecha() {
     return fecha;
 }
 
-string Cita::getHora() const {
+std::string Cita::getHora() {
     return hora;
 }
 
-string Cita::getEspecialidad() const {
+std::string Cita::getEspecialidad() {
     return especialidad;
 }
 
-Paciente Cita::getPaciente() const {
+Paciente* Cita::getPaciente() {
     return paciente;
+}
+
+Funcionario* Cita::getFuncionario() {
+    return funcionario;
 }

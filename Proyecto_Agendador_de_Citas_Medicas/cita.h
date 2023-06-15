@@ -3,20 +3,26 @@
 
 #include <string>
 #include "paciente.h"
+#include "funcionario.h"
+
+using namespace std;
 
 class Cita {
 private:
-    std::string fecha;
-    std::string hora;
-    std::string especialidad;
-    Paciente paciente;
+    string fecha;
+    string hora;
+    string especialidad;
+    Paciente* paciente;
+    Funcionario* funcionario;
 
 public:
-    Cita(const string& fecha, const string& hora, const string& especialidad, const Paciente& paciente);
-    string getFecha() const;
-    string getHora() const;
-    string getEspecialidad() const;
-    Paciente getPaciente() const;
+    Cita(string fecha, string hora, string especialidad, Paciente* paciente, Funcionario* funcionario);
+
+    string getFecha();
+    string getHora();
+    string getEspecialidad();
+    Paciente* getPaciente();
+    Funcionario* getFuncionario();
 };
 
 #endif // CITA_H
