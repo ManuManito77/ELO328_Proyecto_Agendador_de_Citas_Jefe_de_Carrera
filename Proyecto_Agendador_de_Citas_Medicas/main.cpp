@@ -10,18 +10,18 @@ int main(int argc, char *argv[])
     Widget w;
     w.show();
 
-    std::cout << "Welcome!!" << std::endl;
+    cout << "Welcome!!" << std::endl;
 
     Clinica clinica;
 
     // Solicitar una cita
-    std::string nombrePaciente = "Juan Perez";
-    std::string contactoPaciente = "1234567890";
+    string nombrePaciente = "Juan Perez";
+    string contactoPaciente = "1234567890";
     Paciente paciente(nombrePaciente, contactoPaciente);
 
-    std::string fechaCita = "2023-06-10";
-    std::string horaCita = "14:30";
-    std::string especialidadCita = "Cardiología";
+    string fechaCita = "2023-06-10";
+    string horaCita = "14:30";
+    string especialidadCita = "Cardiología";
     Cita cita(fechaCita, horaCita, especialidadCita, paciente);
 
     clinica.programarCita(cita);

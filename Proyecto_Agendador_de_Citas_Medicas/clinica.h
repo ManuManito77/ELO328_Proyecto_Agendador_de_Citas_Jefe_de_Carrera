@@ -2,11 +2,11 @@
 #define CLINICA_H
 
 #include <vector>
-#include "Cita.h"
+#include "cita.h"
 
 class Clinica {
 private:
-    std::vector<Cita> citas;
+    vector<Cita> citas;
 
 public:
     void programarCita(const Cita& cita);

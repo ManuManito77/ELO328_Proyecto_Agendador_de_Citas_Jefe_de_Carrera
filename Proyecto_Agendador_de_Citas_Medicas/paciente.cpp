@@ -1,6 +1,6 @@
 #include "paciente.h"
 
-Paciente::Paciente(const std::string& nombre, const std::string& contacto)
+Paciente::Paciente(const string& nombre, const string& contacto)
     : nombre(nombre), contacto(contacto) {}
 
 std::string Paciente::getNombre() const {

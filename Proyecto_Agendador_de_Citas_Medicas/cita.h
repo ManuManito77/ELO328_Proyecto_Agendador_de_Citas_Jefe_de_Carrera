@@ -12,10 +12,10 @@ private:
     Paciente paciente;
 
 public:
-    Cita(const std::string& fecha, const std::string& hora, const std::string& especialidad, const Paciente& paciente);
-    std::string getFecha() const;
-    std::string getHora() const;
-    std::string getEspecialidad() const;
+    Cita(const string& fecha, const string& hora, const string& especialidad, const Paciente& paciente);
+    string getFecha() const;
+    string getHora() const;
+    string getEspecialidad() const;
     Paciente getPaciente() const;
 };
 

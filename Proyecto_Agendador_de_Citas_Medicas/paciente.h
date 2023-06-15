@@ -3,6 +3,8 @@
 
 #include <string>
 
+using namespace std;
+
 class Paciente {
 private:
     std::string nombre;
