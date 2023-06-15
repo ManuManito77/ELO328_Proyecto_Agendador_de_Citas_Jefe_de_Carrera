@@ -31,7 +31,7 @@ int main(int argc, char *argv[])
     // Mostrar citas programadas
     clinica.mostrarCitas();
 
-    Widget w(nullptr, dato);
+    Widget w(1, nullptr);
     w.show();
 
     // Liberar memoria

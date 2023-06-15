@@ -14,7 +14,7 @@ class Widget : public QWidget
     Q_OBJECT
 
 public:
-    Widget(QWidget *parent = nullptr, int dato);
+    Widget(int dato, QWidget *parent = nullptr);
     ~Widget();
     //void cambiarTextoEtiqueta();
 private slots:
