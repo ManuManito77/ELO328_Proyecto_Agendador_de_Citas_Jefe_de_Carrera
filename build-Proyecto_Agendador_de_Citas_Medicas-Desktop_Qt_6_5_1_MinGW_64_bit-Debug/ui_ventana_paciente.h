@@ -11,7 +11,9 @@
 
 #include <QtCore/QVariant>
 #include <QtWidgets/QApplication>
+#include <QtWidgets/QListWidget>
 #include <QtWidgets/QPushButton>
+#include <QtWidgets/QTextEdit>
 #include <QtWidgets/QWidget>
 
 QT_BEGIN_NAMESPACE
@@ -20,15 +22,23 @@ class Ui_Ventana_paciente
 {
 public:
     QPushButton *pushButton;
+    QTextEdit *textEdit;
+    QListWidget *listWidget;
 
     void setupUi(QWidget *Ventana_paciente)
     {
         if (Ventana_paciente->objectName().isEmpty())
             Ventana_paciente->setObjectName("Ventana_paciente");
-        Ventana_paciente->resize(400, 300);
+        Ventana_paciente->resize(905, 365);
         pushButton = new QPushButton(Ventana_paciente);
         pushButton->setObjectName("pushButton");
-        pushButton->setGeometry(QRect(140, 120, 83, 29));
+        pushButton->setGeometry(QRect(780, 320, 83, 29));
+        textEdit = new QTextEdit(Ventana_paciente);
+        textEdit->setObjectName("textEdit");
+        textEdit->setGeometry(QRect(530, 160, 131, 31));
+        listWidget = new QListWidget(Ventana_paciente);
+        listWidget->setObjectName("listWidget");
+        listWidget->setGeometry(QRect(20, 40, 256, 192));
 
         retranslateUi(Ventana_paciente);
 

@@ -9,7 +9,7 @@ Widget::Widget(int dato, QWidget *parent)
     ui->setupUi(this);
 
     //Para agregar una acción a un boton
-    connect(ui->pushButton, &QPushButton::clicked, this, &Widget::abrirVentanaPaciente);
+    connect(ui->pushButton_2, &QPushButton::clicked, this, &Widget::abrirVentanaPaciente);
     //connect(ui->pushButton_2, &QPushButton::clicked, this, &Widget::abrirVentana);
 }
 

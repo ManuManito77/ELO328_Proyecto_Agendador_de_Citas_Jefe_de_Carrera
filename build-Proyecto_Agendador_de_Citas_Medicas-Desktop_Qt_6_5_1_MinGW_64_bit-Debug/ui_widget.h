@@ -83,8 +83,8 @@ public:
     void retranslateUi(QWidget *Widget)
     {
         Widget->setWindowTitle(QCoreApplication::translate("Widget", "Widget", nullptr));
-        pushButton_2->setText(QCoreApplication::translate("Widget", "PushButton", nullptr));
-        pushButton->setText(QCoreApplication::translate("Widget", "PushButton", nullptr));
+        pushButton_2->setText(QCoreApplication::translate("Widget", "Pacientes", nullptr));
+        pushButton->setText(QCoreApplication::translate("Widget", "Funcionarios", nullptr));
         label->setText(QCoreApplication::translate("Widget", "TextLabel", nullptr));
     } // retranslateUi
 

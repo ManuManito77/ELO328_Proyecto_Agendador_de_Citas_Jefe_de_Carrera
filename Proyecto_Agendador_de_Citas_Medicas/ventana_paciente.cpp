@@ -6,9 +6,21 @@ Ventana_paciente::Ventana_paciente(QWidget *parent) :
     ui(new Ui::Ventana_paciente)
 {
     ui->setupUi(this);
+    //ui->label->setText("¡Hola, mundo!");
+    ui->listWidget->addItem("hello!");
+    ui->listWidget->addItem("hello!");
 }
 
 Ventana_paciente::~Ventana_paciente()
 {
     delete ui;
 }
+
+/*
+void Widget::cambiarTextoEtiqueta()
+{
+    ui->label->setText("¡Hola, mundo!");
+}
+
+
+*/
