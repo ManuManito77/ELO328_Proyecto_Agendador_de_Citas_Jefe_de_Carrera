@@ -1,8 +1,9 @@
 #ifndef VENTANA_PACIENTE_H
 #define VENTANA_PACIENTE_H
 
-#include <QWidget>
 
+#include <QWidget>
+#include <QListWidgetItem>
 namespace Ui {
 class Ventana_paciente;
 }
@@ -15,6 +16,7 @@ public:
     explicit Ventana_paciente(QWidget *parent = nullptr);
     ~Ventana_paciente();
 
+    void DiaSeleccionado(QListWidgetItem *item);
 private:
     Ui::Ventana_paciente *ui;
 };

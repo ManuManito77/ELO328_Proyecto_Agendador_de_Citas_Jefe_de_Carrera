@@ -4,6 +4,7 @@
 #include <QMainWindow>
 #include <QDialog>
 #include "ventana_paciente.h"
+#include "jefe_carrera.h"
 
 QT_BEGIN_NAMESPACE
 namespace Ui { class Widget; }
@@ -19,8 +20,10 @@ public:
     //void cambiarTextoEtiqueta();
 private slots:
     void abrirVentanaPaciente();
+    void abrirVentanaJefeCarrera();
 private:
     Ui::Widget *ui;
     Ventana_paciente *v;
+    Jefe_Carrera *j;
 };
 #endif // WIDGET_H

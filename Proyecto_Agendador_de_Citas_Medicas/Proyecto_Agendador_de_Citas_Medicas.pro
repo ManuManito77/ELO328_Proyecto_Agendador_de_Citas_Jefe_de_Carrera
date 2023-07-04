@@ -12,6 +12,7 @@ SOURCES += \
     cita.cpp \
     clinica.cpp \
     funcionario.cpp \
+    jefe_carrera.cpp \
     main.cpp \
     paciente.cpp \
     ventana_paciente.cpp \
@@ -21,11 +22,13 @@ HEADERS += \
     cita.h \
     clinica.h \
     funcionario.h \
+    jefe_carrera.h \
     paciente.h \
     ventana_paciente.h \
     widget.h
 
 FORMS += \
+    jefe_carrera.ui \
     ventana_paciente.ui \
     widget.ui
 
