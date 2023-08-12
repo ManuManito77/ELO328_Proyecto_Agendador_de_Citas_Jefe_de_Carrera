@@ -9,27 +9,19 @@ CONFIG += c++17
 #DEFINES += QT_DISABLE_DEPRECATED_BEFORE=0x060000    # disables all the APIs deprecated before Qt 6.0.0
 
 SOURCES += \
-    cita.cpp \
-    clinica.cpp \
-    funcionario.cpp \
     jefe_carrera.cpp \
     main.cpp \
-    paciente.cpp \
-    ventana_paciente.cpp \
+    ventana_consulta.cpp \
     widget.cpp
 
 HEADERS += \
-    cita.h \
-    clinica.h \
-    funcionario.h \
     jefe_carrera.h \
-    paciente.h \
-    ventana_paciente.h \
+    ventana_consulta.h \
     widget.h
 
 FORMS += \
     jefe_carrera.ui \
-    ventana_paciente.ui \
+    ventana_consulta.ui \
     widget.ui
 
 # Default rules for deployment.
